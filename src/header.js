@@ -47,6 +47,6 @@ export default class Header {
     }
 
     convertBinaryToInteger(buffer) {
-        return buffer.readIntLE(0, buffer.length);
+        return buffer.readUIntLE(0, buffer.length);
     }
 }
